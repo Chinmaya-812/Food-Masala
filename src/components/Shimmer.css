@@ -1,0 +1,31 @@
+.resturant-list {
+  padding: 11px 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.ShimmerCard {
+  width: 250px;
+  height: 350px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    lightgrey 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 4s infinite;
+  margin: 12px;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
